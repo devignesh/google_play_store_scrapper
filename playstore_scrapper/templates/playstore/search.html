@@ -1,0 +1,70 @@
+<html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'search.css' %}" />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<head>
+    <title>Play store - Search</title>
+</head>
+
+<body>
+    <div class="content">
+        <div id="search-section" class="rounded">
+            <a href="/">
+                <img id="logo" src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_1x.png" alt="Google Play">
+            </a>
+            <form id="search-box" method="get" action="">
+                <input type="text" value="" name="category" class="search-input-box" id="search" placeholder="search">
+                <input type="submit" value="Search" class="search-btn">
+            </form>
+            <div style="clear:both"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {% for app in app_data %}
+                <div class="app-preview col-md-4">
+                    <div style="margin-bottom: 5px;">
+                        <a href="{{ app.link }}" target="_blank" class="app-preview-title">{{ app.title }}</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="{{ app.image }}" alt="app_image" class="app-preview-img">
+                    </div>
+                    <div class="app-preview-content-div">
+                        <span class="app-preview-label">Ratings</span>
+                        <p class="app-preview-content" title="{{app.rating}}">{{ app.app_details.total_rating }}/5</p>
+                    </div>
+                    <div class="app-preview-content-div">
+                        <span class="app-preview-label">Toatal peoples rated</span>
+                        <p class="app-preview-content"> {{ app.app_details.rating_people }}</p>
+                    </div>
+                    <div class="app-preview-content-div">
+                        <span class="app-preview-label">Last Updated on</span>
+                        <p class="app-preview-content"> {{ app.app_details.last_updation }}</p>
+                    </div>
+                    <div class="app-preview-content-div">
+                        <span class="app-preview-label">Toatl Installation</span>
+                        <p class="app-preview-content"> {{ app.app_details.installation_count }}</p>
+                    </div>
+                    <div class="app-preview-content-div">
+                        <span class="app-preview-label">Current Version</span>
+                        <p class="app-preview-content"> {{ app.app_details.current_version }}</p>
+                    </div>
+                    <div class="app-preview-content-div">
+                        <span class="app-preview-label">Devloper</span><br/>
+                        <a class="app-preview-content" href="{{ app.app_details.company_url }}" target="_blank">Visit Website</a><br/>
+                        <a class="app-preview-content" href="mailto:{{ app.app_details.feedback_mail }}" target="_blank">{{ app.app_details.feedback_mail }}</a><br/>
+                        <a class="app-preview-content" href="{{ app.app_details.app_dev_link }}" target="_blank">Other Apps</a><br/>
+                        <a class="app-preview-content" href="{{ app.app_details.privacy_policy_url }}" target="_blank">Privacy policy</a><br/>
+                        <p class="app-preview-content">{{ app.app_details.company_address }}</p>
+                    </div>
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

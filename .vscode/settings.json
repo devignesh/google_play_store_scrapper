@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/devignesh/.local/share/virtualenvs/google_play_store_scrapper-yPGcVwyo/bin/python"
+    "python.pythonPath": "/home/devignesh/.local/share/virtualenvs/google_play_store_scrapper-yPGcVwyo/bin/python",
+    "python.linting.pylintEnabled": true
 }

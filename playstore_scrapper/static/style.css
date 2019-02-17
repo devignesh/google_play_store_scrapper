@@ -1,12 +1,12 @@
 body {
-    font-family: arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     margin: 50px 10px;
     padding: 0;
     text-align: center;
 }
 
 .content {
-    margin: 0 auto;
+    margin: 20% auto;
     width: 750px;
 }
 

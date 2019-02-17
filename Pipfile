@@ -11,6 +11,7 @@ pylint = "*"
 django-extensions = "*"
 "beautifulsoup4" = "*"
 ipdb = "*"
+requests = "*"
 
 [requires]
 python_version = "3.5"

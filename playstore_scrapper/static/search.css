@@ -1,0 +1,87 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 20px 10px;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+.content {
+    margin: -10px 0px;
+    background: #f1f1f1;
+}
+
+#search-section {
+    border-bottom: 1px solid #a1b4d9;
+    margin: 10px 0;
+}
+
+#logo {
+    float: left;
+    margin: 17px;
+}
+
+#search-box {
+    float: left;
+    margin: 20px 10px;
+}
+
+.search-input-box {
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+}
+
+.search-btn {
+    height: 40px;
+    width: 110px;
+    border: 1px solid #ccc;
+    background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+    color: #fff;
+    cursor: pointer;
+}
+
+.app-preview {
+    background: #fff;
+    box-shadow: 0px 0px 3px 3px #8888884a;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.app-preview-title {
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.app-preview-img {
+    width: 130px;
+    border: 1px solid #f1f1f1;
+}
+
+.app-preview-content-div {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px 0px;
+    text-align: left;
+    vertical-align: top;
+    width: 150px;
+}
+
+.app-preview-label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.app-preview-content {
+    color: #333;
+    font-size: 12px;
+}
+
+.col-md-4 {
+    width: 32.33333333% !important;
+}
