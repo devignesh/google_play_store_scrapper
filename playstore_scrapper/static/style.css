@@ -1,0 +1,41 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 50px 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    width: 750px;
+}
+
+#search-section {
+    border: 1px solid #a1b4d9;
+    margin: 10px 0;
+}
+
+#logo {
+    float: left;
+    margin: 17px;
+}
+
+#search-box {
+    float: left;
+    margin: 20px 10px;
+}
+
+.search-input-box {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+}
+
+.search-btn {
+    height: 40px;
+    width: 110px;
+    border: 1px solid #ccc;
+    background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+    color: #fff;
+    cursor: pointer;
+}

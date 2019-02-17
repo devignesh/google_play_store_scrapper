@@ -1,0 +1,24 @@
+<html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<head>
+    <title>Play store scrapper</title>
+</head>
+
+<body>
+    <div class="content">
+        <div id="search-section" class="rounded">
+            <a href="/store">
+                <img id="logo" src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_1x.png" alt="Google Play">
+            </a>
+            <form id="search-box" method="get" action="/store/search">
+                <input type="text" value="" name="content" class="search-input-box" placeholder="search">
+                <input type="submit" value="Search" class="search-btn">
+            </form>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+</body>
+
+</html>
